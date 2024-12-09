@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      line-height: 1.8;
+      color: #666666;
+      font-size: 16px;
+      margin-bottom: 15px;
+      text-align: justify;
+      word-wrap: break-word;
+    }
+
+    /* Styling for the 'Office of the Principal' text */
+    .office-title {
+      text-align: center;
+      font-size: 18px;
+      color: blue;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+
+    .closing-statement {
+      position: absolute;
+      bottom: 35px;
+      right: 30px;
+      text-align: right;
+      font-style: italic;
+      color: #999999;
+      font-size: 18px;
+    }
+
+    .closing-statement span {
+      color: red;
+      font-weight: bold;
+    }
+
+    /* Typing animation */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .typing-wrapper {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .first-text {
+      font-size: 15px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .sec-texts {
+      height: 20px;
+      line-height: 20px;
+      overflow: hidden;
+    }
+
+    .sec-texts li {
+      font-size: 12px;
+      color: #0ef;
+      list-style: none;
+      padding: 0 20px;
+      text-shadow: 0 0 10px #0ef;
+      animation: slide 12s steps(4) infinite, colorful 6s infinite;
+    }
+
+    @keyframes slide {
+      100% {
+        top: -360px;
+      }
+    }
+
+    @keyframes colorful {
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+
+    .sec-texts li span::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 400px;
+      height: 90px;
+      background: #fff;
+      border-left: 2px solid #0ef;
+      animation: typing 2.5s steps(10) infinite alternate;
+    }
+
+    @keyframes typing {
+      100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+      }
+    }
+
+    /* Ensure images are responsive */
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* Ensure main content area is responsive */
+    .content-container {
+      max-width: 90%;
+      margin: 0 auto;
+    }
+
+    /* Adjust text for small screens */
+    @media (max-width: 768px) {
+      .office-title {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .first-text {
+        font-size: 12px;
+      }
+
+      .sec-texts li {
+        font-size: 10px;
+      }
+
+      .closing-statement {
+        font-size: 14px;
+      }
+
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height: 9, width: 16) */
+        height: 0;
+        overflow: hidden;
+      }
+
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- Hidden Message Container -->
+<div class="message-container" style="display: none;">
+  <!-- Main Content -->
+  <div class="content-container">
+    <p class="office-title"><strong>OFFICE OF THE PRINCIPAL <br> Christian Medical College, Vellore</strong></p>
+
+    <div class="typing-wrapper">
+      <span class="first-text"><strong>Wishes you</strong></span>
+      <ul class="sec-texts">
+        <li><span>"Merry Christmas & A Prosperous New Year"</span></li>
+      </ul>
+    </div>
+    
+    <div class="video-container">
+        <center>
+          <video width="560" height="315" controls autoplay muted>
+            <source src="Christmas_message.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </center>
+    </div>
+
+    <center><img src="https://drive.google.com/thumbnail?authuser=0&sz=w250&id=1fTESne5Xi26UDQ0dbg78hVTPkKBFPuBj" alt="Image" /></center><br>
+
+    <p><strong><center style="color: red;">"Do you know where Jesus was born?<br> A barn, cave, or house?"</center></strong></p>
+    <img src="https://drive.google.com/thumbnail?authuser=0&sz=w1000&id=1eZOgzkNsbq_R-k7PRD8Nxo8MDxbk5PM4" alt="Image" />
+
+    <p>The question <strong>“Where was Jesus born?”</strong> is surprisingly tricky. The snarky answer is, <strong>“In Bethlehem.”</strong> Yes, but where? The typical nativity scene features the holy family in a stable that looks like a barn, separate from the Inn, where there was no room. But is this accurate? Most historians and scholars say, “Not so much.”</p>
+
+    <p>Since students are growing increasingly cynical about the particulars of the nativity, it’s important to teach it accurately so they can have confidence in the Christmas message.</p>
+
+    <p><strong>What We Know :</strong></p>
+    <p>We know that Jesus was born in Bethlehem, there was no room “in the inn,” and that he was wrapped in swaddling clothes and laid in a manger. <br><br>“And Joseph also went up from Galilee, from the town of Nazareth to Judea, to the city of David, which is called Bethlehem, because he was of the house and lineage of David, to be registered with Mary, his betrothed, who was with child. And while they were there, the time came for her to give birth. And she gave birth to her firstborn son and wrapped him in swaddling clothes and laid him in a manger, because there was no place for them in the inn.” <strong><a href="https://www.biblegateway.com/passage/?search=Luke%202%3A4-7&version=NIV" target="_blank">Luke 2:4-7</a></strong></p>
+
+    <p><strong>The Popular Assumption: In a Barn</strong></p>
+    <p>If you look at any manger scene or contemporary nativity sets, this is the popular image presented. Understandably, the reasoning goes like this: Jesus was placed in a manger, which was a feeding trough for livestock, so he must’ve been born in the barn with the animals. This is where farmers today keep their animals, but people in the Ancient Near East (which includes Israel) simply didn’t do this. This theory is a product of contemporary Western life and is fairly easy to dismiss.</p>
+
+    <p><strong>The Traditional View: A Cave</strong></p>
+    <p>The Early Church Fathers wrote about Jesus being born in a cave. Justin Martyr (150 A.D.), Origen (250 A.D.), Jerome (325 A.D.) each believed this was the case. In 335 A.D, Emperor Constantine approved the cave that was the traditional site of Jesus’ birth to be turned into a holy site, known as the <strong><a href="https://en.wikipedia.org/wiki/Church_of_the_Nativity" target="_blank">“Church of the Nativity.”</a></strong></p>
+
+    <p>The people of Bethlehem were known to keep their flocks in an adjoining cave to their homes. There is archaeological evidence for animals being housed in caves. And yet, it is important to remember that despite the Church of the Nativity being commissioned as a holy site as early as 325 A.D., the Bible does not make definitive reference to a cave, only to a manger. It is entirely possible that Origen and Jerome simply followed Justin Martyr’s early-but-wrong theory.</p>
+
+    <p><strong>The Most Likely View: A House</strong></p>
+    <img src="https://drive.google.com/thumbnail?authuser=0&sz=w1000&id=1P-peaUhRBZFypc-fpyl_UyAzrYTCVXMl" alt="Image" />
+    <p>The image above is a reconstruction of what homes in Bethlehem looked like. Typically, the bottom floor was a place for the most valuable animals to be housed, especially during inclement weather. The top floor was the primary residence for the family and always included an “upper room” that would serve as a guest room for visitors. This is the type of room that Jesus and his disciples used to celebrate the Passover because it was completely expected for faithful Jewish families to show hospitality to travelers, especially to family. When Luke 2:7 says “there was no room for them in the inn,” the Greek word is the word for this guest room, not for a hotel (there was a different word for that, which is used in the Parable of the Good Samaritan). Because of the census, the upper room was already too full for them to give birth, so they stayed in the lower level where there was enough room for everything that goes into birthing a child.</p>
+
+    <p><strong>An Unlikely but Interesting Theory: Migdal Eder</strong></p>
+    <p>This highlights that the shepherds of Bethlehem were specially tasked with birthing and caring for the lambs who would be provided for temple sacrifice. The Tower of Migdal (in Hebrew, Migdal Eder) was the watchtower for the special flock of appointed sheep who would be sacrificed for the atonement of Israel. Lambs were wrapped in swaddling clothes to keep them from injury and laid in mangers for their own protection. Thus, when Christ was wrapped in swaddling clothes and laid in a manger, and then worshipped by the shepherds, it was a clear reflection of Jesus Christ, <strong>“The Lamb of God who takes away the sin of the world.” </strong></p><br>
+
+    <center><p style="font-size: 12px; color:green;"><strong>"For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life". - John 3:16</strong></p></center>
+    <center><p style="font-size: 12px; color:green;"><strong>"தேவன், தம்முடைய ஒரேபேறான குமாரனை விசுவாசிக்கிறவன் எவனோ அவன் கெட்டுப்போகாமல் நித்தியஜீவனை அடையும்படிக்கு, அவரைத் தந்தருளி, இவ்வளவாய் உலகத்தில் அன்புகூர்ந்தார்". - யோவான் 3:16</strong></p></center>
+
+    <center><img src="https://drive.google.com/thumbnail?authuser=0&sz=w500&id=1BGJJwJ8v3Z5f9QdTNA9uW3V8A9zV3xSi" alt="Image" /></center>
+  </div>
+</div>
+
+<script>
+  setTimeout(function() {
+    document.querySelector('.message-container').style.display = 'block';
+  }, 500); // Show after 2 seconds
+</script>
+
+</body>
+</html>
